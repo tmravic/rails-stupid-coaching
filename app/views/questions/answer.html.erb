@@ -1,2 +1,10 @@
 <h1>Stupid Coaching</h1>
-<p><%= @coach_answer %></p>
+<div class="qaset">
+  <p><%= @repeat_question_test %></p>
+  <p><em>-You</em></p>
+</div>
+<div class="qaset2">
+  <p><%= @coach_answer %></p>
+  <p><em>-Your coach</em></p>
+</div>
+<%= link_to "Ask a new question", ask_path, class: "go_back" %>
